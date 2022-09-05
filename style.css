@@ -1,0 +1,212 @@
+/* Fontes importadas do google fontes */
+@import url("https://fonts.googleapis.com/css2?family=Gravitas+One&family=Kenia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap");
+
+/* setando as margens da página */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Definindo a navbar, cores e margens */
+.nav-link {
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.navbar {
+  border-bottom: 0.4px solid rgb(139, 200, 41);
+}
+
+.navbar-brand {
+  margin-left: 150px;
+  font-family: "Gravitas One", cursive;
+  color: rgb(139, 200, 41);
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.navbar-nav {
+  margin-right: 150px;
+}
+
+/* Coloquei um fundo oscuro na página usando uma imagem */
+body {
+  background-image: url("./fundo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.principal {
+  margin-top: 80px;
+  margin-bottom: 48px;
+}
+
+.perfil {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+/* usei flexbox ara definir as duas partes da seção "perfil" */
+.perfil-informacao {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.perfil-informacao-titulo {
+  font-family: "Righteous", cursive;
+  font-weight: 200;
+  font-size: 40px;
+  color: #2ec253;
+}
+
+.perfil-informacao-escrito {
+  font-size: 20px;
+  color: white;
+}
+/* Definindo caracteristicas do botão e efeito :hover */
+.btn-perfil {
+  background-color: #2ec253;
+  width: 120px;
+  height: 40px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #2f2325;
+}
+
+.btn-perfil:hover {
+  background-color: whitesmoke;
+  font-family: sans-serif;
+  color: #2f2325;
+}
+
+.foto {
+  height: 300px;
+  border-radius: 20%;
+  display: block;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secoes {
+  margin-top: 80px;
+  margin-bottom: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+  background-color: black;
+  opacity: 0.7;
+  color: white;
+}
+
+.titulo {
+  border-top: 0.4px solid #fff2e7;
+  padding-top: 48px;
+  margin-bottom: 16px;
+}
+.apresentacao-paragrafo,
+.formacao-parafrafo {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.card-body {
+  background-color: whitesmoke;
+  font-family: sans-serif solid;
+}
+.card-title {
+  color: black;
+}
+
+.card-text {
+  color: black;
+}
+
+.construcao {
+  height: 70%;
+  width: 70%;
+  margin-top: 40px;
+}
+
+.portafolio-secao {
+  margin-top: 50px;
+}
+
+.portafolio-subtitulo {
+  font-family: "Righteous", cursive;
+  font-size: 20px;
+}
+
+/* Aqui configurei os medios de contatos principais. Usei ícones do site https://fontawesome.com/ */
+.contatos {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form {
+  background: rgba(0, 0, 0 0.6);
+  color: whitesmoke;
+  box-shadow: 0px 0px 10px 3px grey;
+}
+
+.icone-pequeno {
+  font-size: 20px;
+  color: white;
+  padding-right: 10px;
+}
+
+/* Aqui configurei o linkedin e github maiores, para dar destaque, já que são as redes sociais profissionais */
+.contatos-grandes {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 50px;
+}
+
+.fa-linkedin-in {
+  color: rgb(122, 122, 219);
+  font-size: 70px;
+}
+.fa-github {
+  font-size: 70px;
+  color: whitesmoke;
+}
+
+/* Efeito quando passa o mouse */
+.icone-grande :hover {
+  color: #2ec253;
+}
+
+/* Configuração do formulario para não ficar grudadas as linhas */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0px 10px 0;
+}
+
+/* Rodapé simples */
+footer {
+  background-color: rgb(179, 175, 175);
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.rodape-texto {
+  font-family: "Righteous", sans-serif;
+  color: black;
+}

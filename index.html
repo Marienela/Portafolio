@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portafolio pessoal Marienela Buendia</title>
+    <!-- Além do bootstrap, foi usado um arquivo de css -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Importei uma libraria de ícones que vou usar na seção de contatos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  </head>
+ 
+  <body>
+   <!-- Composto pela navbar e a parte main que tem cada seção dentro dela -->
+    <script src="script.js" defer></script>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #0e6d25">
+      <spam class="navbar-brand mb-0 h1">MB</spam>
+      <div
+        class="collapse navbar-collapse d-flex justify-content-end align-items-center"
+        id="navlink"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a href="#apresentacao" class="nav-link">Apresentação</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#formacao" class="nav-link">Formação</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#potafolio" class="nav-link">Portafolio</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#contato" class="nav-link">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+     
+    <main class="principal">
+<!-- Separei em sesões para poder linkar o menu da navbar com cada uma delas -->
+<!-- 1. Seção Perfil: Contem a foto e é a parte principal do site -->
+      <section class="perfil">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 perfil-informacao" >
+              <h1 class="perfil-informacao-titulo">Marienela Buendia</h1>
+              <h3 class="perfil-informacao-escrito">
+                Estudante de análise de desenvolvimento de sistemas <br />UNINTER
+              </h3>
+              <!-- coloquei um botão com flexbox que vai direcionar para a seção de contatos -->
+              <a class="btn-perfil btn btn-primary" href="#contato" role="button">Contato</a>
+            </div>
+    
+            <div class="col-sm-4">
+              <img class="foto" src="./foto.jpg" alt="Marienela"/>
+            </div>
+  
+          </div>
+        </div>
+   
+      </section>
+
+      <!-- 2. Seção Apresentação -->
+      <section class="secoes" id="apresentacao">
+        <h3 class="titulo">Sobre mim</h3>
+        <p class="apresentacao-paragrafo">
+          Sou Venezuelana morando em Florianópolis- SC
+        </p>
+        <p class="apresentacao-paragrafo">
+          Apaixonada por natureza e pelos animais
+        </p>
+        <p class="apresentacao-paragrafo">Gosto de praias e trilhas</p>
+      </section>
+
+      <!-- 3. Seção Formação. Contem cards feitos com bootstrap. A classe col-sm-6 permite colocar dois cards de igual tamanho -->
+      <section class="secoes" id="formacao">
+        <h3 class="titulo">Formação</h3>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Universidad de Los Andes (Venezuela)</h5>
+                <p class="card-text">Biologia.<br>(2006 - 2012)</p>
+                <a href="http://www.ula.ve/" class="btn btn-primary">SITE ULA</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">UNINTER</h5>
+                <p class="card-text">Tecnólogo em análise e desenvolvimento de sistemas (2021 - atual).</p>
+                <a href="https://www.uninter.com/" class="btn btn-primary">SITE UNINTER</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Seção portafolio: Contem 3 partes divididas utilizando bootstrap. foi usado o grid do bootstrap para a divisão em 3 partes iguais -->
+      <section class="secoes" id="potafolio">
+        <h3 class="titulo">Portafolio</h3>
+        <div class="container-fluid parceiros text-center margin">
+          <div class="container">
+            <div class="row">
+              <div class="portafolio-secao col-lg-4">
+                <p class="portafolio-subtitulo">EM CONSTRUÇÃO</p>
+                <img class="construcao" src="./construcao.png" alt="EM BREVE">
+              </div>
+              <div class="portafolio-secao col-lg-4">
+                <p class="portafolio-subtitulo">EM CONSTRUÇÃO</p>
+                <img class="construcao" src="./construcao.png" alt="EM BREVE">
+              </div>
+              <div class="portafolio-secao col-lg-4">
+                <p class="portafolio-subtitulo">EM CONSTRUÇÃO</p>
+                <img class="construcao" src="./construcao.png" alt="EM BREVE">
+              </div>
+          </div>
+        </div>
+      </section>
+
+ <!-- SEÇÃO CONTATO. Na classe foi usado o col-md-6 de bootstrap, para dividir em duas partes iguais a tela, uma para contato e outra para o formulário -->
+      <section class="secoes" id="contato">
+        <h3 class="titulo">Contato</h3>
+        <div class="container contact-form">
+          <div class="row">
+
+            <div class="col-md-6">
+              <div class="contatos">
+                <div><a><i class="icone-pequeno fa-sharp fa-solid fa-location-dot"></i></a>Florianópolis-SC</div>
+                <div><a><i class="icone-pequeno fa-sharp fa-solid fa-at"></i></a>marienelabuendia@gmail.com</div>
+                <div><a><i class="icone-pequeno fa-brands fa-whatsapp"></i></a>48-98830-3823</div>
+              </div>
+
+              <div class="contatos-grandes">
+                <div class="icone-grande"><a href="https://www.linkedin.com/in/marienela-buendia-b6a47b40"><i class="fab fa-linkedin-in"></i></a></div>
+                <div class="icone-grande"><a href="https://github.com/Marienela"><i class="fab fa-github"></i></a></div>
+              
+              </div>
+              
+            </div>
+
+            <div class="col-md-6">
+              <form id="form">
+                <div class="form-group">
+                  <label>Nome</label>
+                  <input id="nome" type="text" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                  <label>E-mail</label>
+                  <input id="email" type="Email" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                  <label>Assunto</label>
+                  <input id="assunto" type="text" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                  <label>Mensagem</label>
+                  <textarea id="mensagem" name="Mensagem" class="form-control" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé simples -->
+    <footer class="conteiner-fluid text-center">
+      <p class="rodape-texto">Desenvolvido por Marienela Buendia, 2022</p>
+  </footer>
+  </body>
+</html>
